@@ -5,6 +5,10 @@
 }
 
 /* Global */
+body {
+    color: var(--color-primary-dark);
+}
+
 ul {
     list-style-type: none;
 }
@@ -13,8 +17,8 @@ span {
     color: var(--color-brand-base)
 }
 
-/* Logo */
-.logo {
+/* Title */
+.hero-title {
     color: var(--color-brand-base);
 }
 
@@ -47,6 +51,7 @@ span {
     color: var(--color-primary-dark);
     cursor: pointer;
     border-radius: 50%;
+    border: 2px solid var(--color-primary-dark);
     width: 44px;
     height: 44px;
     font-size: 18px;
@@ -57,6 +62,7 @@ span {
     color: var(--color-primary-dark);
     cursor: pointer;
     border-radius: 50%;
+    border: 2px solid var(--color-primary-dark);
     width: 44px;
     height: 44px;
     font-size: 18px;
