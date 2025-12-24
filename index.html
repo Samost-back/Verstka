@@ -5,19 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beauty Zone</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <header>
+  <header class="navbar">
     <nav>
       <a href="#">
         <img src="./images/logo.svg" alt="Логотип сучасної косетичної клініки" />
       </a>
       <ul>
-        <li><a href="#about-our">Про нас</a></li>
-        <li><a href="#why-we">Чому ми</a></li>
-        <li><a href="#our-procedures">Наші процедури</a></li>
-        <li><a href="#how-our-search">Контакти</a></li>
+        <li><a class="link" href="#about-our">Про нас</a></li>
+        <li><a class="link" href="#why-we">Чому ми</a></li>
+        <li><a class="link" href="#our-procedures">Наші процедури</a></li>
+        <li><a class="link" href="#how-our-search">Контакти</a></li>
       </ul>
       <ul>
         <li>
@@ -35,11 +36,11 @@
   <main>
     <section>
       <p>Косметологічна клініка</p>
-      <h1>
+      <h1 class="logo">
         Beauty<br>
         Zone
       </h1>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
       <p>
         Запишись та отримай безплатну<br>
         консультацію нашого косметолога
@@ -64,7 +65,7 @@
     </section>
     <section id="why-we">
       <h2>Чому люди<br>
-        обирають нас
+        <span>обирають нас</span>
       </h2>
       <ul>
         <li>
@@ -88,13 +89,14 @@
       </ul>
     </section>
     <section id="our-procedures">
-      <h2>Наші процедури</h2>
+      <h2>Наші <span>процедури</span></h2>
       <ul>
         <li>
-          <button type="button">&lt-</button>
+          <button class="button1" type="button">&lt-</button>
         </li>
         <li>
           <img src="./images/процедури1.jpg" alt="процедура1" />
+          <p class="one-white">Маски для обличчя</p>
         </li>
         <li>
           <img src="./images/процедури2.jpg" alt="процедура2" />
@@ -103,12 +105,12 @@
           <img src="./images/процедури1.jpg" alt="процедура3" />
         </li>
         <li>
-          <button type="button">-&gt</button>
+          <button class="button2" type="button">-&gt</button>
         </li>
       </ul>
     </section>
     <section id="how-our-search">
-      <h2>Як нас знайти</h2>
+      <h2>Як нас <span>знайти</span></h2>
       <ul>
         <li>
           <iframe

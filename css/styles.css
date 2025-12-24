@@ -1,0 +1,86 @@
+:root {
+    --color-primary-dark: #011C44;
+    --color-primary-light: #faf4ea;
+    --color-brand-base: #2B7FFF;
+}
+
+/* Global */
+ul {
+    list-style-type: none;
+}
+
+span {
+    color: var(--color-brand-base)
+}
+
+/* Logo */
+.logo {
+    color: var(--color-brand-base);
+}
+
+/* Link */
+.link {
+    color: var(--color-primary-dark);
+}
+
+.link:hover {
+    color: var(--color-brand-base);
+}
+
+/* Button */
+.button {
+    color: var(--color-primary-light);
+    background: var(--color-brand-base);
+    border: 2px solid var(--color-brand-base);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.button:active {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+.button1 {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.button2 {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.button1:active {
+    background-color: var(--color-brand-base);
+    color: var(--color-primary-light);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid var(--color-brand-base);
+    width: 44px;
+    height: 44px;
+}
+
+.button2:active {
+    background-color: var(--color-brand-base);
+    color: var(--color-primary-light);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid var(--color-brand-base);
+    width: 44px;
+    height: 44px;
+}
+
+/* no */
+.one-white {
+    color: var(--color-primary-light);
+}
