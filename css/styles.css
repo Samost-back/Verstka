@@ -1,3 +1,35 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v50-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v50-latin-600.woff2') format('woff2');
+}
+
 :root {
     --color-primary-dark: #011C44;
     --color-primary-light: #faf4ea;
@@ -7,6 +39,10 @@
 /* Global */
 body {
     color: var(--color-primary-dark);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 ul {
@@ -17,18 +53,41 @@ span {
     color: var(--color-brand-base)
 }
 
+h2 {
+    font-family: Play, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+}
+
 /* Title */
 .hero-title {
     color: var(--color-brand-base);
+    font-family: Play, sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.h2-left {
+    text-align: left;
 }
 
 /* Link */
 .link {
     color: var(--color-primary-dark);
+    text-decoration: none;
 }
 
 .link:hover {
     color: var(--color-brand-base);
+    font-weight: 700;
+}
+
+.footer .link {
+    font-size: 16px;
+    line-height: 1;
 }
 
 /* Button */
@@ -38,6 +97,7 @@ span {
     border: 2px solid var(--color-brand-base);
     border-radius: 12px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button:active {
@@ -89,11 +149,35 @@ span {
 }
 
 /* no */
-.one-white {
-    color: var(--color-primary-light);
-}
 
 .dark-one {
     color: var(--color-primary-dark);
     font-weight: 600;
+    font-size: 22px;
+}
+
+.mini-p {
+    font-size: 12px;
+}
+
+.our-clinik {
+    line-height: 1.7;
+}
+
+.registr {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+}
+
+/* Foter */
+.info-nam {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.deff {
+    font-size: 13px;
+    line-height: 1;
 }
