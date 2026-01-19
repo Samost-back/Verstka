@@ -11,29 +11,32 @@
 <body>
   <header class="navbar">
     <div class="container">
-      <nav>
+      <div class="navbar-container">
         <a href="#">
           <img src="./images/logo.svg" alt="Логотип сучасної косетичної клініки" />
         </a>
-        <ul>
-          <li><a class="link" href="#about-our">Про нас</a></li>
-          <li><a class="link" href="#why-we">Чому ми</a></li>
-          <li><a class="link" href="#our-procedures">Наші процедури</a></li>
-          <li><a class="link" href="#how-our-search">Контакти</a></li>
+        <nav>
+          <ul class="header-menu">
+            <li><a class="link" href="#about-our">Про нас</a></li>
+            <li><a class="link" href="#why-we">Чому ми</a></li>
+            <li><a class="link" href="#our-procedures">Наші процедури</a></li>
+            <li><a class="link" href="#how-our-search">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contact">
+          <li>
+            <a href="#"><button>nom</button></a>
+          </li>
+          <li>
+            <a href="#"><button>fac</button></a>
+          </li>
+          <li>
+            <a href="#"><button>inst</button></a>
+          </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#"><!--nom--></a>
-          </li>
-          <li>
-            <a href="#"><!--fac--></a>
-          </li>
-          <li>
-            <a href="#"><!--inst--></a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </div>
+
   </header>
   <main>
     <div class="container">
@@ -52,21 +55,27 @@
     </div>
     <section class="section section--first" id="about-our">
       <div class="container">
-        <h2 class="h2-left">
-          Перевтілюйтесь<br>
-          в <span>Beauty Zone!</span>
-        </h2>
-        <img src="./images/group.jpg" alt="Жінка до" />
-        <p class="our-clinik">Наша косметологічна клініка пропонує вам професійні послуги<br>
-          з догляду за шкірою обличчя та тіла.
-        <p class="our-clinik">
-          B <span class="dark-one">Beauty Zone</span> ми гарантуємо найвищі стандарти якості<br>
-          та приємний сервіс. Наші косметологічні процедури та препарати<br>
-          допоможуть вам підтримувати свою красу та
-          молодість.<br>
-          З нами краса назавжди!
-        </p>
-        <img src="./images/group1.jpg" alt="Жінка після" />
+        <div class="glob-section-photo">
+          <div class="section-text-cont">
+            <h2 class="h2-left">
+              Перевтілюйтесь<br>
+              в <span>Beauty Zone!</span>
+            </h2>
+            <p class="our-clinik">Наша косметологічна клініка пропонує вам професійні послуги<br>
+              з догляду за шкірою обличчя та тіла.
+            <p class="our-clinik">
+              B <span class="dark-one">Beauty Zone</span> ми гарантуємо найвищі стандарти якості<br>
+              та приємний сервіс. Наші косметологічні процедури та препарати<br>
+              допоможуть вам підтримувати свою красу та
+              молодість.<br>
+              З нами краса назавжди!
+            </p>
+          </div>
+          <div class="section-photo-cont">
+            <img src="./images/group.jpg" alt="Жінка до" />
+            <img src="./images/group1.jpg" alt="Жінка після" />
+          </div>
+        </div>
       </div>
     </section>
     <section class="section" id="why-we">
@@ -74,22 +83,22 @@
         <h2>Чому люди<br>
           <span>обирають нас</span>
         </h2>
-        <ul>
-          <li>
+        <ul class="section-people">
+          <li class="section-card">
             <img src="./images/Vector1.svg" alt="" />
-            <p>Всі наші косметологи мають<br>
+            <p class="people-p">Всі наші косметологи мають<br>
               вищу медичну освіту<br>
               та стаж роботи від 5 років</p>
           </li>
-          <li>
+          <li class="section-card">
             <img src="./images/Vector2.svg" alt="" />
-            <p>Використовуєм тільки<br>
+            <p class="people-p">Використовуєм тільки<br>
               професійне обладнання та<br>
               косетику, перевірену часом</p>
           </li>
-          <li>
+          <li class="section-card">
             <img src="./images/Vector3.svg" alt="" />
-            <p>Наша мета - підкреслити<br>
+            <p class="people-p">Наша мета - підкреслити<br>
               переваги та приховати<br>
               недоліки, а не переробити</p>
           </li>
@@ -129,7 +138,7 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </li>
         </ul>
-        <p class="registr">Запишіться <span>безкоштовно</span> та отримайте подарунок </p>
+        <p class="registr">Запишіться <span>безкоштовно</span><br> та отримайте подарунок </p>
         <p><!--Вікно для запису безкоштовно--></p>
       </div>
 
