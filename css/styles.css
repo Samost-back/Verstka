@@ -152,6 +152,25 @@ h2 {
     margin-bottom: 0;
 }
 
+.our-procedur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+}
+
+.our-procedur-card {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.section-last-adap {
+    display: flex;
+}
+
 /* Title */
 .hero-section {
     padding: 126px 605px 126px 106px;
@@ -287,7 +306,24 @@ h2 {
     line-height: 1;
 }
 
+.address-class ul {
+    margin-top: 0;
+}
+
 .link-ft {
     display: block;
+    margin-top: 0;
     margin-bottom: 16px;
+}
+
+.icon-sot {
+    display: flex;
+}
+
+.footer-global {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 56px;
+    margin-bottom: 56px;
 }
