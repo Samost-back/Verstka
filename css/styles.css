@@ -62,6 +62,7 @@ p {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 span {
@@ -82,7 +83,7 @@ h2 {
 }
 
 .section--first {
-    margin-bottom: 128px;
+    margin-bottom: 80px;
 }
 
 .section-last {
@@ -97,7 +98,7 @@ h2 {
 }
 
 /* navbar */
-.navbar {
+.header {
     background-color: #ffffff40;
 }
 
@@ -130,6 +131,15 @@ h2 {
 
 .section-photo-cont {
     display: block;
+    gap: 40px;
+}
+
+.photo-two {
+    padding-left: 200px;
+}
+
+.section-text-cont {
+    padding-top: 40px;
 }
 
 .section-people {
@@ -175,6 +185,7 @@ h2 {
 .hero-section {
     padding: 126px 605px 126px 106px;
 }
+
 
 .hero-title {
     margin-bottom: 0;
@@ -281,8 +292,11 @@ h2 {
 }
 
 .our-clinik {
-    line-height: 1.7;
     margin-top: 40px;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 38px;
+    letter-spacing: 0%;
 }
 
 .registr {
@@ -292,18 +306,24 @@ h2 {
 }
 
 /* Footer */
+.footer {
+    background-color: rgba(1, 28, 68, 1);
+}
+
 .info-nam {
     display: block;
     margin-bottom: 16px;
     text-decoration: none;
     font-size: 16px;
     line-height: 1;
-
+    color: var(--color-primary-light);
 }
+
 
 .deff {
     font-size: 13px;
     line-height: 1;
+    color: rgba(116, 114, 114, 1);
 }
 
 .address-class ul {
@@ -314,16 +334,23 @@ h2 {
     display: block;
     margin-top: 0;
     margin-bottom: 16px;
+    color: var(--color-primary-light);
+}
+
+a span {
+    display: block;
+    color: var(--color-primary-light);
 }
 
 .icon-sot {
     display: flex;
+    margin: 0;
 }
 
 .footer-global {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 56px;
-    margin-bottom: 56px;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
