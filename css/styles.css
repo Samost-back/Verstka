@@ -41,6 +41,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--color-primary-dark);
     font-family: Roboto, sans-serif;
@@ -130,16 +134,26 @@ h2 {
 }
 
 .section-photo-cont {
-    display: block;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
+    width: 499px;
 }
 
+.section-photo-cont img:last-child {
+    align-self: flex-end;
+}
+
+.photo-one,
 .photo-two {
-    padding-left: 200px;
+    border-radius: 50%;
+    width: 327px;
+    height: 327px;
 }
 
 .section-text-cont {
     padding-top: 40px;
+    width: 709px;
 }
 
 .section-people {
@@ -179,6 +193,12 @@ h2 {
 
 .section-last-adap {
     display: flex;
+    gap: 32px;
+}
+
+.images-proc {
+    border-radius: 4px 120px 4px 120px;
+
 }
 
 /* Title */
@@ -209,7 +229,6 @@ h2 {
 
 .link:hover {
     color: var(--color-brand-base);
-    font-weight: 700;
 }
 
 .footer .link {
@@ -237,19 +256,10 @@ h2 {
 }
 
 .button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    color: var(--color-primary-dark);
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid var(--color-primary-dark);
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-}
-
-.button2 {
-    background-color: transparent;
-    color: var(--color-primary-dark);
     cursor: pointer;
     border-radius: 50%;
     border: 2px solid var(--color-primary-dark);
@@ -260,22 +270,11 @@ h2 {
 
 .button1:hover {
     background-color: var(--color-brand-base);
-    color: var(--color-primary-light);
-    cursor: pointer;
-    border-radius: 50%;
     border: 2px solid var(--color-primary-light);
-    width: 44px;
-    height: 44px;
 }
 
-.button2:hover {
-    background-color: var(--color-brand-base);
-    color: var(--color-primary-light);
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid var(--color-primary-light);
-    width: 44px;
-    height: 44px;
+.button1:hover .button-arrow {
+    fill: var(--color-primary-light);
 }
 
 /* no */
@@ -299,6 +298,12 @@ h2 {
     letter-spacing: 0%;
 }
 
+.locations {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
 .registr {
     font-weight: 600;
     font-size: 22px;
@@ -317,6 +322,10 @@ h2 {
     font-size: 16px;
     line-height: 1;
     color: var(--color-primary-light);
+}
+
+.info-nam:hover {
+    color: var(--color-brand-base);
 }
 
 
@@ -344,7 +353,9 @@ a span {
 
 .icon-sot {
     display: flex;
+    gap: 24px;
     margin: 0;
+    fill: var(--color-primary-light);
 }
 
 .footer-global {
